@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ModeToggle } from "./ThemeMode";
+import MobileNavigation from "./MobileNavigation";
 
 const Navbar = async () => {
   return (
@@ -20,8 +21,9 @@ const Navbar = async () => {
 
       <h1>Global Search</h1>
 
-      <div>
+      <div className="flex-between gap-2">
         <ModeToggle />
+        <MobileNavigation />
       </div>
     </nav>
   );
