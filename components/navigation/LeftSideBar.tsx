@@ -1,5 +1,5 @@
 import React from "react";
-import NavLinks from "./NavLinks";
+import NavLinks from "./navbar/NavLinks";
 import Link from "next/link";
 import ROUTES from "@/constants/routes";
 import { Button } from "@/components/ui/button";
@@ -9,7 +9,7 @@ const LeftSideBar = () => {
       <div className="flex flex-1 flex-col gap-6">
         <NavLinks />
       </div>
-      <div className="flex flex-col">
+      <div className="flex flex-col gap-2">
         <Link href={ROUTES.SIGN_IN}>
           <Button className="small-medium btn-secondary min-h-[41px] w-full rounded-lg py-3 px-4 shadow-none">
             <span className="primary-text-gradient">Log in</span>
